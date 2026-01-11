@@ -66,43 +66,42 @@ export default function App() {
       </div>
 
       {report && (
-  <div className="reportDashboard">
-    <h2>📊 Final Analysis Dashboard</h2>
+        <div className="reportDashboard">
+          <h2>📊 Final Analysis Dashboard</h2>
 
-    <div className="dashGrid">
-      <div className="dashCard"><h4>Stock</h4><p>{report.symbol}</p></div>
-      <div className="dashCard"><h4>Price</h4><p>{report.price}</p></div>
-      <div className="dashCard"><h4>P/E Ratio</h4><p>{report.pe}</p></div>
-      <div className="dashCard"><h4>EPS</h4><p>{report.eps}</p></div>
-      <div className="dashCard"><h4>Sentiment</h4><p>{report.sentiment}</p></div>
-      <div className="dashCard"><h4>Trend</h4><p>{report.trend}</p></div>
-      <div className="dashCard highlight"><h4>Decision</h4><p>{report.decision}</p></div>
-      <div className="dashCard"><h4>Risk</h4><p>{report.risk}</p></div>
-      <div className="dashCard"><h4>Horizon</h4><p>{report.horizon}</p></div>
-    </div>
+          <div className="dashGrid">
+            <div className="dashCard"><h4>Stock</h4><p>{report.symbol}</p></div>
+            <div className="dashCard"><h4>Price</h4><p>{report.price}</p></div>
+            <div className="dashCard"><h4>P/E Ratio</h4><p>{report.pe}</p></div>
+            <div className="dashCard"><h4>EPS</h4><p>{report.eps}</p></div>
+            <div className="dashCard"><h4>Sentiment</h4><p>{report.sentiment}</p></div>
+            <div className="dashCard"><h4>Trend</h4><p>{report.trend}</p></div>
+            <div className="dashCard highlight"><h4>Decision</h4><p>{report.decision}</p></div>
+            <div className="dashCard"><h4>Risk</h4><p>{report.risk}</p></div>
+            <div className="dashCard"><h4>Horizon</h4><p>{report.horizon}</p></div>
+          </div>
 
-    {/* Chart Section */}
-    <h3 style={{ marginTop: "25px" }}>📈 Agent Strength Chart</h3>
-    <div className="chartBox">
-      <div className="bar">
-        <span>Market</span>
-        <div className="barFill" style={{ width: "80%" }}>80%</div>
-      </div>
-      <div className="bar">
-        <span>Sentiment</span>
-        <div className="barFill" style={{ width: "70%" }}>70%</div>
-      </div>
-      <div className="bar">
-        <span>Quant</span>
-        <div className="barFill" style={{ width: "75%" }}>75%</div>
-      </div>
-      <div className="bar">
-        <span>Strategy</span>
-        <div className="barFill" style={{ width: "65%" }}>65%</div>
-      </div>
+          <h3 style={{ marginTop: "25px" }}>📈 Agent Strength Chart</h3>
+          <div className="chartBox">
+            <div className="bar">
+              <span>Market</span>
+              <div className="barFill" style={{ width: "80%" }}>80%</div>
+            </div>
+            <div className="bar">
+              <span>Sentiment</span>
+              <div className="barFill" style={{ width: "70%" }}>70%</div>
+            </div>
+            <div className="bar">
+              <span>Quant</span>
+              <div className="barFill" style={{ width: "75%" }}>75%</div>
+            </div>
+            <div className="bar">
+              <span>Strategy</span>
+              <div className="barFill" style={{ width: "65%" }}>65%</div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
-  </div>
-)}
-</div>
-);
+  );
 }
